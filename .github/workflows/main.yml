@@ -1,0 +1,14 @@
+name: Download MahsaNG APK
+on:
+  workflow_dispatch:
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Download file
+        run: wget https://github.com/GFW-knocker/MahsaNG/releases/download/v15/MahsaNG_15_universal.apk -O MahsaNG.apk
+      - name: Upload APK
+        uses: actions/upload-artifact@v4
+        with:
+          name: MahsaNG-APK
+          path: MahsaNG.apk
