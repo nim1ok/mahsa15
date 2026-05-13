@@ -10,5 +10,5 @@ jobs:
       - name: Upload APK
         uses: actions/upload-artifact@v4
         with:
-          name: MahsaNG-APK
-          path: MahsaNG.apk
+          name: NimaNG-APK
+          path: NimaNG.apk
